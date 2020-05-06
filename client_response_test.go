@@ -42,6 +42,9 @@ func (r response) Body() io.ReadCloser {
 func (r response) Request() *http.Request {
 	return &http.Request{}
 }
+func (r response) Response() *http.Response {
+	return &http.Response{}
+}
 
 func TestResponseReaderFunc(t *testing.T) {
 	var actual struct {

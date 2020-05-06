@@ -28,6 +28,7 @@ type ClientResponse interface {
 	GetHeader(string) string
 	Body() io.ReadCloser
 	Request() *http.Request
+	Response() *http.Response
 }
 
 // A ClientResponseReaderFunc turns a function into a ClientResponseReader interface implementation

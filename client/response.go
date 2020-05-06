@@ -46,3 +46,7 @@ func (r response) Body() io.ReadCloser {
 func (r response) Request() *http.Request {
 	return r.resp.Request
 }
+
+func (r response) Response() *http.Response {
+	return r.resp
+}
