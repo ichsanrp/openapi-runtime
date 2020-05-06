@@ -18,6 +18,7 @@ import (
 	"bytes"
 	"io"
 	"io/ioutil"
+	"net/http"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -37,6 +38,9 @@ func (r response) GetHeader(_ string) string {
 }
 func (r response) Body() io.ReadCloser {
 	return ioutil.NopCloser(bytes.NewBufferString("the content"))
+}
+func (r response) Request() *http.Request {
+	return &http.Request{}
 }
 
 func TestResponseReaderFunc(t *testing.T) {

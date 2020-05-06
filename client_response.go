@@ -17,6 +17,7 @@ package runtime
 import (
 	"fmt"
 	"io"
+	"net/http"
 )
 
 // A ClientResponse represents a client response
@@ -26,6 +27,7 @@ type ClientResponse interface {
 	Message() string
 	GetHeader(string) string
 	Body() io.ReadCloser
+	Request() *http.Request
 }
 
 // A ClientResponseReaderFunc turns a function into a ClientResponseReader interface implementation
