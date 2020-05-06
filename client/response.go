@@ -42,3 +42,7 @@ func (r response) GetHeader(name string) string {
 func (r response) Body() io.ReadCloser {
 	return r.resp.Body
 }
+
+func (r response) Request() *http.Request {
+	return r.resp.Request
+}
