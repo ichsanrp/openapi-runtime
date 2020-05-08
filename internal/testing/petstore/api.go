@@ -25,11 +25,11 @@ import (
 	"github.com/go-openapi/loads"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/go-openapi/runtime"
-	testingutil "github.com/go-openapi/runtime/internal/testing"
-	"github.com/go-openapi/runtime/middleware/untyped"
-	"github.com/go-openapi/runtime/security"
-	"github.com/go-openapi/runtime/yamlpc"
+	"github.com/ichsanrp/openapi-runtime"
+	testingutil "github.com/ichsanrp/openapi-runtime/internal/testing"
+	"github.com/ichsanrp/openapi-runtime/middleware/untyped"
+	"github.com/ichsanrp/openapi-runtime/security"
+	"github.com/ichsanrp/openapi-runtime/yamlpc"
 )
 
 // NewAPI registers a stub api for the pet store

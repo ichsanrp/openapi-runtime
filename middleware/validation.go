@@ -22,7 +22,7 @@ import (
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/swag"
 
-	"github.com/go-openapi/runtime"
+	"github.com/ichsanrp/openapi-runtime"
 )
 
 type validation struct {

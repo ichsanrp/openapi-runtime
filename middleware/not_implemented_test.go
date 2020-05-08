@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/go-openapi/runtime"
+	"github.com/ichsanrp/openapi-runtime"
 	"github.com/stretchr/testify/require"
 )
 

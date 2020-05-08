@@ -22,8 +22,8 @@ import (
 	"github.com/go-openapi/errors"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/go-openapi/runtime"
-	"github.com/go-openapi/runtime/internal/testing/petstore"
+	"github.com/ichsanrp/openapi-runtime"
+	"github.com/ichsanrp/openapi-runtime/internal/testing/petstore"
 )
 
 func TestOperationExecutor(t *testing.T) {
